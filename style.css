@@ -16,6 +16,13 @@ body {
   position: relative;
 }
 
+header {
+  text-align: center;
+  margin: 30px auto;
+  font-size: 3rem;
+  color: #001f3f;
+}
+
 .field-name,
 .field-email,
 .field-password,

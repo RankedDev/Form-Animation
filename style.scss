@@ -13,6 +13,17 @@ body {
     position: relative;
 }
 
+header {
+    // display: flex;
+    // justify-content: center;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 3rem;
+    color: #001f3f;
+
+    // align-items: center;
+}
+
 .field-name,
 .field-email,
 .field-password,
