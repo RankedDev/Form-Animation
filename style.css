@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #57bd82;
+  -webkit-transition: background 1s ease;
+  transition: background 1s ease;
+  position: relative;
+}
+
+.field-name,
+.field-email,
+.field-password,
+.field-finish {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  height: 50px;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.field-name input,
+.field-email input,
+.field-password input,
+.field-finish input {
+  border: none;
+  background: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.field-name i,
+.field-email i,
+.field-password i,
+.field-finish i {
+  padding: 10px;
+  cursor: pointer;
+}
+
+div.inactive {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
+div.active {
+  opacity: 1;
+  pointer-events: all;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotate(10deg);
+            transform: translate(-50%, -50%) rotate(10deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotate(10deg);
+            transform: translate(-50%, -50%) rotate(10deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
