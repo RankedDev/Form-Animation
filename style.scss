@@ -23,7 +23,7 @@ body {
     transform: translate(-50%, -50%);
     background-color: #fff;
     height: 50px;
-    width: 400px;
+    max-width: 400px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,8 +65,16 @@ div.active {
         transform: translate(-50%, -50%) rotate(0deg);
     }
 
-    50% {
+    20% {
         transform: translate(-50%, -50%) rotate(10deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    75% {
+        transform: translate(-50%, -50%) rotate(-10deg);
     }
 
     100% {
