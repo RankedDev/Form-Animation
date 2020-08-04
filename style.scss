@@ -81,3 +81,12 @@ div.active {
         transform: translate(-50%, -50%) rotate(0deg);
     }
 }
+
+
+.err-text {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    color: #DDDDDD;
+}

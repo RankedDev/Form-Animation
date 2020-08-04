@@ -1,4 +1,6 @@
 console.log('hello world');
+const ErrorText = document.querySelector('.err-text');
+
 
 function animatedForm() {
     const arrows = document.querySelectorAll('.fa-arrow-down');
@@ -35,9 +37,9 @@ function animatedForm() {
 function validateUser(user) {
     if (user.value.length < 6) {
         console.log('not enough characthers');
-        error('rgb(189,87,87)');
+        error('rgb(189,87,87)', 'Enter at least six(6) Charcters');
     } else {
-        error('rgb(87, 189, 130)')
+        error('rgb(87, 189, 130)', '')
         return true
     }
 }
@@ -45,16 +47,18 @@ function validateUser(user) {
 function validateEmail(email) {
     const validation = /\S+@\S+\.\S+/;
     if (validation.test(email.value)) {
-        error('rgb(87, 189, 130)')
+        error('rgb(87, 189, 130)', '')
         return true
     } else {
-        error('rgb(189,87,87)');
+        error('rgb(189,87,87)', 'Enter Valid Email');
 
     }
 }
 
-function error(color) {
+function error(color, errmsg) {
     document.body.style.backgroundColor = color;
+    ErrorText.innerHTML = errmsg;
+    // console.log(ErrorText.innerHTML)
 }
 
 function nextSlide(parent, nextForm) {

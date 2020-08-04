@@ -125,4 +125,13 @@ div.active {
             transform: translate(-50%, -50%) rotate(0deg);
   }
 }
+
+.err-text {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+  color: #DDDDDD;
+}
 /*# sourceMappingURL=style.css.map */
